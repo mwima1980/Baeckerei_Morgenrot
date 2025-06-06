@@ -7,61 +7,40 @@
 
 /* Fonts */
 @font-face {
-  font-family: Montserrat;
-  src: url("./src/Fonts/Montserrat-Regular.ttf") format("truetype");
+  font-family: Merriweather;
+  src: url("/src/Fonts/Merriweather_24pt-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: Roboto;
-  src: url("./src/Fonts/Roboto-Regular.ttf") format("truetype");
+  font-family: Lato;
+  src: url("/src/Fonts/Lato-Regular.ttf") format("truetype");
 }
 
 /* Typescaling */
 h1 {
-  font-size: 5.613rem;
-  font-family: Montserrat;
+  font-size: 3rem;
+  font-family: Merriweather;
 }
 h2 {
-  font-size: 4.206rem;
-  font-family: Montserrat;
+  font-size: 2rem;
+  font-family: Merriweather;
 }
-h3 {
-  font-size: 3.156rem;
-  font-family: Montserrat;
-}
-h4 {
-  font-size: 2.369rem;
-  font-family: Roboto;
-}
-h5 {
-  font-size: 1.775rem;
-  font-family: Roboto;
-}
-h6 {
-  font-size: 1.331rem;
-  font-family: Roboto;
-}
+
 p {
   font-size: 1rem;
-  font-family: Roboto;
-}
-small {
-  font-size: 0.75rem;
-  font-family: Roboto;
+  font-family: Lato;
 }
 
 /* Variablen / Color */
 :root {
-  --color1: #373f51;
-  --color2: #d8dbe2;
-  --color3: #61e786;
+  --color1: #dcc6a0;
+  --color2: #4a2f15;
+  --color3: #f5f0e6;
   --color4: #d81e5b;
-  --color5: #f19a3e;
-  --Color1Opa: ;
-  --realWhite: #fafafa;
+  --color5: #ffffff;
 }
 
 /* Media - Queries */
-.container {
+/* .container {
   width: 95%;
   padding-left: 1rem;
   padding-right: 1;
@@ -111,4 +90,4 @@ small {
   html {
     font-size: 1.3rem;
   }
-}
+} */
