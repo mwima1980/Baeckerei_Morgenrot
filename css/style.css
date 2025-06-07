@@ -64,6 +64,11 @@ p {
   text-decoration: none;
   color: var(--color2);
 }
+.desktop-nav > ul li a:hover,
+.desktop-nav > ul li a:focus {
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
 .mobile-container {
   display: none;
 }
@@ -83,10 +88,49 @@ p {
 }
 .mobile-nav > ul li a:hover,
 .mobile-nav > ul li a:focus {
-  text-decoration: underline;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
 }
 .mobile-container > .mobile-nav {
   display: none;
+}
+/* Hero - Section */
+.hero-section {
+  background-image: url("/src/picture/HeroPicture.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--color1);
+  height: 50vh;
+}
+.text-container h1 {
+  font-weight: 100;
+}
+.btn-container {
+  min-width: 100%;
+  text-align: center;
+}
+.btn-container button {
+  padding: 1rem;
+  width: 200px;
+  border: none;
+  background-color: var(--color2);
+  color: var(--color1);
+  border-radius: 20%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn-container button:hover {
+  cursor: pointer;
+  background-color: #5d3e21;
 }
 /* Media Queries */
 @media (max-width: 768px) {
