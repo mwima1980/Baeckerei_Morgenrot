@@ -24,7 +24,6 @@ h2 {
   font-size: 2rem;
   font-family: Merriweather;
 }
-
 p {
   font-size: 1rem;
   font-family: Lato;
@@ -39,7 +38,83 @@ p {
   --color5: #ffffff;
 }
 
-/* Media - Queries */
+/* Header - Section */
+.header-container {
+  display: flex;
+  position: relative;
+  background-color: var(--color1);
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+.header-container h2 {
+  font-weight: 100;
+  margin-left: 2rem;
+  color: var(--color2);
+}
+.desktop-nav ul {
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 2rem;
+}
+.desktop-nav ul li {
+  list-style: none;
+}
+.desktop-nav ul li a {
+  text-decoration: none;
+  color: var(--color2);
+}
+.mobile-container {
+  display: none;
+}
+.mobile-nav > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: var(--color1);
+}
+.mobile-nav > ul li {
+  list-style: none;
+}
+.mobile-nav > ul li a {
+  text-decoration: none;
+  color: var(--color2);
+}
+.mobile-nav > ul li a:hover,
+.mobile-nav > ul li a:focus {
+  text-decoration: underline;
+}
+.mobile-container > .mobile-nav {
+  display: none;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .desktop-container {
+    display: none;
+  }
+  .mobile-container {
+    position: absolute;
+    display: block;
+    width: 100px;
+    right: 10%;
+  }
+  .img-container img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+  }
+  .img-container img:hover {
+    cursor: pointer;
+  }
+  .mobile-container:hover > .mobile-nav {
+    display: flex;
+    position: absolute;
+  }
+}
+
 /* .container {
   width: 95%;
   padding-left: 1rem;
