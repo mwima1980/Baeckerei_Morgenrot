@@ -49,7 +49,7 @@ p {
 }
 .header-container h2 {
   font-weight: 100;
-  margin-left: 4rem;
+  margin-left: 3rem;
   color: var(--color2);
 }
 .desktop-nav ul {
@@ -91,16 +91,14 @@ p {
   text-decoration-line: underline;
   text-underline-offset: 2px;
 }
-.mobile-container > .mobile-nav {
-  display: none;
-}
+
 /* Hero - Section */
 .hero-section {
   background-image: url("/src/picture/HeroPicture.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 50vh;
+  min-height: 70vh;
 }
 .text-container {
   display: flex;
@@ -139,7 +137,6 @@ p {
   column-gap: 3rem;
   background-color: var(--color3);
   padding: 2.5rem;
-  border: 3px solid red;
 }
 .about-us-section .text-container {
   display: flex;
@@ -161,7 +158,7 @@ p {
   width: 350px;
 }
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .desktop-container {
     display: none;
   }
@@ -170,6 +167,9 @@ p {
     display: block;
     width: 100px;
     right: 10%;
+  }
+  .mobile-nav {
+    display: none;
   }
   .img-container img {
     display: flex;
@@ -194,6 +194,55 @@ p {
   }
 }
 
+@media (max-width: 750px) {
+  /* ABOUT - US - SECTION */
+  .about-us-section {
+    grid-template-columns: 1fr;
+    padding: 0 2rem 2rem 2rem;
+  }
+  .about-us-section .text-container {
+    justify-content: start;
+    margin-top: 3rem;
+    height: 25vh;
+  }
+  .about-us-section .text-container h3 {
+    font-size: 1.25rem;
+  }
+  .mobile-nav {
+    position: absolute;
+    display: none;
+    left: 4rem;
+    width: 80%;
+  }
+  .mobile-container:hover > .mobile-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 550px) {
+  /* HEADER - SECTION */
+  .header-container h2 {
+    margin-left: 1rem;
+  }
+  .mobile-container .img-container {
+    display: flex;
+    justify-content: end;
+  }
+  /* HERO - SECTION */
+  .hero-section .text-container {
+    height: 70vh;
+  }
+  .mobile-nav {
+    position: absolute;
+    display: none;
+    left: 4rem;
+    width: 80%;
+  }
+  .mobile-container:hover > .mobile-nav {
+    display: flex;
+    align-items: center;
+  }
+}
 /* .container {
   width: 95%;
   padding-left: 1rem;
